@@ -79,7 +79,6 @@ const CountrySel=()=> {
       setFromCountries(country.name);
       setFromCities(country.cities);
     };
-  
     return (
       <Form.Group controlId="custom-select">
         <Form.Label>Select Country</Form.Label>

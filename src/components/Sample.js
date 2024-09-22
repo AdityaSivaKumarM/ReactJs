@@ -26,6 +26,62 @@ for (let i=0; i < array.length; i++) {
 }
 
 console.log(largest);
+
+
+let original = ["olleH", "!!yad dooG"];
+ let reversed = "";
+ for (let i = original.length - 1; i >= 0; i--) {
+ reversed += original[i]; 
+ } 
+ console. log(reversed);
+let arrStrs = ["olleH", "!!yad dooG"];
+let outputStrs = [];
+for(let i=0;i<arrStrs.length;i++){
+    outputStrs.push(arrStrs[i].split('').reverse().join(''))
+}
+console.log(outputStrs);
+
+  
+  const images = [1,2,3,2,3,4,2]
+  const uniqueTags1 = [];
+images.map(img => {
+    if (uniqueTags1.indexOf(img) === -1) {
+        uniqueTags1.push(img)
+    }
+});
+console.log(uniqueTags1)
+
+//palindrome
+const palindrom = "racecar";
+let strr = palindrom.split('').reverse().join('');
+console.log(strr == palindrom); // true
+
+//Anagram
+const anagram1 = 'listen';
+const anagram2 = 'silent';
+let str1 = anagram1.split('').sort().join('');
+let str2 = anagram2.split('').sort().join('');
+console.log(str1 == str2); // true 
+
+//factorial
+const num = 5;
+let f=1;
+for(let i=1;i<=num;i++){
+    f*=i;
+}
+console.log(f);
+
+//longest word
+let sentese = "Hi Hellow JavaScript Hellow";
+let word = sentese.split(" ");
+let longestword = "";
+for(let words of word){
+    if(words.length >longestword.length){
+          longestword = words;
+    }
+}
+console.log(longestword);
+
 // prijnt max or min values
 var numbers = [2, 4, 9, 2, 0, 16, 24];
 
@@ -45,25 +101,14 @@ console.log('Largest: ' + largest);
 
 
 // Function which pushes all zeros to end of an array.  
-function pushZerosToEnd(arr, n)  
-{  
-    let count = 0; // Count of non-zero elements  
-  
-    // Traverse the array. If element encountered is non-  
-    // zero, then replace the element at index 'count'  
-    // with this element  
+function pushZerosToEnd(arr, n)  {
+    let count = 0;
     for (let i = 0; i < n; i++)  
         if (arr[i] != 0)  
-            arr[count++] = arr[i]; // here count is  
-                                // incremented  
-  
-    // Now all non-zero elements have been shifted to  
-    // front and 'count' is set as index of first 0.  
-    // Make all elements 0 from count to end.  
+            arr[count++] = arr[i];  
     while (count < n)  
         arr[count++] = 0;  
-}  
-  
+};
 // Driver code 
     let arr = [1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0, 9];  
     let n = arr.length;  
@@ -72,8 +117,7 @@ function pushZerosToEnd(arr, n)
     for (let i = 0; i < n; i++)  
         document.write(arr[i] + " "); 
 		
-		
-		
+			
 //Reverse of a string:
 let test = "hello how are you";
 function reverse1(str){
@@ -85,15 +129,31 @@ function reverse1(str){
 }
 console.log(reverse1());
 
-let original = "Hello World";
- let reversed = "";
- for (let i = original.length - 1; i >= 0; i--) {
- reversed += original[i]; 
+let original1 = "Hello World";
+ let reversed1 = "";
+ for (let i = original1.length - 1; i >= 0; i--) {
+    reversed1 += original1[i]; 
  } 
- console. log(reversed);
+ console. log(reversed1);
 
 		
 //remove duplicates in string:
+//with using method:
+function wordsReverser(string){
+return string.split("").reverse().join("").split(" ").reverse().join(" ")  
+}
+
+console.log(wordsReverser('New string, same results.'))
+
+  var arr1 =[2,4,5,6,7]
+  var arr2 =[9,4,5,8,1]
+  //output: print unique values in both arrays
+  const uniqueTags = [];
+images.map(img => {
+    if (uniqueTags.indexOf(img.tag) === -1) {
+        uniqueTags.push(img.tag)
+    }
+});
 
 let str = "000234239999233";
 const duplicateString = function(){
@@ -106,7 +166,7 @@ const duplicateString = function(){
 console.log(duplicateString());
 
 
-
+//closure
 const closure=(a)=>{
     return  (b)=>{
           return a*b;
@@ -114,7 +174,7 @@ const closure=(a)=>{
 }
 console.log(closure(3)(4))
 
-
+// merge two arrays or print unique num by comparing both array
 const a = [{
   id: 1
 }, {
@@ -132,7 +192,7 @@ const array3 = b.filter(obj => !a.some(({id}) => obj.id === id));
 
 console.log(array3)
 
-
+// pyramid
 function generatePyramid() {
     var totalNumberofRows = 5;
     var output = '';
@@ -179,28 +239,32 @@ function count() {
 
 count();
 
-
+// print count of repeated elements in array
 const aarry =['Banana', 'April', 'May', 'Mark', 'May', 'Apple', 'May']
- 
-// {  
-//   Banana: 1,  
-//   April: 1, 
-//   Mark: 1, 
-//   May: 3 
-// }
-  var obj ={};
- var obj = {name:"aditya"}
- const obj = new Object();
- Object.assign({}, ['a','b','c']); // {0:"a", 1:"b", 2:"c"}
- ['a', 'b', 'c'].reduce((a, v) => ({ ...a, [v]: v}), {}) 
-// { a: "a", b: "b", c: "c" }
- console.log(obj);
 const funcList =()=>{
 let listObj= aarry.reduce((item,val)=>
 (item[val] = (item[val]||0)+1,item),{});
 return listObj
 }
 console.log(funcList())
+
+//output:
+// {  
+//   Banana: 1,  
+//   April: 1, 
+//   Mark: 1, 
+//   May: 3 
+// }
+
+
+// object creation types
+var obj ={};
+var obj = {name:"aditya"}
+const obj = new Object();
+Object.assign({}, ['a','b','c']); // converted array to object{0:"a", 1:"b", 2:"c"}
+['a', 'b', 'c'].reduce((a, v) => ({ ...a, [v]: v}), {}) 
+// { a: "a", b: "b", c: "c" }
+console.log(obj);
 
 //Remove duplicates starts
 let arry = [10,20,30,10,15,20,25,40];
@@ -209,14 +273,14 @@ for(let i=0;i<arry.length;i++){
     if(!newArray.includes(arr[i])){
         newArray.push(arr[i]);
     }
-    (or)
+    //(or)
     let findIndex = newArray.findIndex(item => item == arry[i]);
       if(findIndex == -1){
           newArray.push(arry[i]);
       }
 }
 console.log(newArray);
-(or)
+//(or)
   let duplicate=arr.filter((obj,index)=>{
         return arr.indexOf(obj) == index
     })
@@ -242,6 +306,88 @@ let array=[10,20,50,40,25,30];
 //let sortArray = array.sort((a,b)=> a-b);//assending order
 let sortArray = array.sort((a,b)=> b-a); // descending order
 console.log(sortArray);
+
+
+
+
+// Write a program to create an array and rotate the elements stored in the array by two positions.
+
+
+// The program should first take the input of array size and then the elements of the array. Then program should rotate the elements of the array by 2.
+
+
+// Example Input : 12345
+// Output : 45123
+
+// => [3, 4, 5, 1, 2]
+
+// let k = 2
+// => [4, 5, 1, 2, 3]
+
+// let k = 1
+// => [5, 1, 2, 3, 4]
+//ANS:
+// const rotateArray1 = function(nums, k) {
+
+//   for (let i = 0; i < k; i++) {
+//       nums.unshift(nums.pop());
+//   }
+
+//   return nums;
+// }
+
+// const rotateArray2 = function(nums, k) {
+
+//   // reverse helper function
+//   function reverse(arr, start, end) {
+//     while (start < end) {
+//       [arr[start], arr[end]] = [arr[end], arr[start]];
+//       start++;
+//       end--;
+//     }
+//   }
+
+//   k %= nums.length;
+
+//   reverse(nums, 0, (nums.length - 1));
+//   reverse(nums, 0, (k - 1));
+//   reverse(nums, k, (nums.length - 1));
+
+//   return nums;
+// }
+const arr1 = [1,2,3,4,5];
+const k = 2;
+const rotateArray1 = (arr1,k) =>arr1.concat(arr1).slice(k, k+arr1.length);
+console.log(rotateArray1(arr1,k));
+  //(or)
+ const rotateArray2 = (arr1, k) => arr1.slice(k).concat(arr1.slice(0, k));
+  console.log(rotateArray2(arr1,k));
+
+  //(or)
+const arr2 = [1, 3, 6, 5, 4];
+const rotatedArr = arr2.map((e, i) => arr2[arr2.length-i-1]);
+console.log(rotatedArr);
+// output:
+//[ 3, 4, 5, 1, 2 ]
+
+var output = (function(x){
+    delete x;
+    return x;
+})(0);
+console.log(output); // output: 0
+
+// the array will be going to stack overflow due to infinite loop fix this issue.
+//var list = regList([]);
+// var newFunction = function(){
+//     var item = list.pop();
+//     if(item){
+//         newFunction();
+//     }
+// }
+// console.log(newFunction());
+
+
+
 // assending and dessending order ends
 // A simple project in React
 
