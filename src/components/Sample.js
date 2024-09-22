@@ -308,7 +308,51 @@ let sortArray = array.sort((a,b)=> b-a); // descending order
 console.log(sortArray);
 
 
+// program to count the number of vowels in a string
 
+function countVowel(str) { 
+
+    // find the count of vowels
+    const count = str.match(/[aeiou]/gi).length;
+
+    // return number of vowels
+    return count;
+}
+
+// take input
+const string = prompt('Enter a string: ');
+
+const result = countVowel(string);
+
+console.log(result);
+
+//(or)
+// program to count the number of vowels in a string
+
+// defining vowels
+const vowels = ["a", "e", "i", "o", "u"]
+
+function countVowel(str) {
+    // initialize count
+    let count = 0;
+
+    // loop through string to test if each character is a vowel
+    for (let letter of str.toLowerCase()) {
+        if (vowels.includes(letter)) {
+            count++;
+        }
+    }
+
+    // return number of vowels
+    return count
+}
+
+// take input
+const string1 = prompt('Enter a string: ');
+
+const result = countVowel(string1);
+
+console.log(result);
 
 // Write a program to create an array and rotate the elements stored in the array by two positions.
 
@@ -386,8 +430,24 @@ console.log(output); // output: 0
 // }
 // console.log(newFunction());
 
+// create a class and run program for given object
+// not working below code
+// let calc = new Calc();
+// class calc {
+//   constructor() { ... }
+//   add(val){
+//       return val
+//   }
+//   sub(){
+//       return 4
+//   }
+//   result(){
+//       return 3
+//   }
+// }
+// var res = calc.add(3).add(4).result();
 
-
+// console.log(res);
 // assending and dessending order ends
 // A simple project in React
 
