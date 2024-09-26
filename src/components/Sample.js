@@ -15,7 +15,7 @@ const map = { a: 1, b: 2, c: 3 };
 const result = Object.values(map);
 
 console.log(result);
-// Print max array value:
+// Print max array value:a
 var array = [3, 6, 2, 56, 32, 5, 89, 32];
 var largest = 0;
 
@@ -82,7 +82,7 @@ for(let words of word){
 }
 console.log(longestword);
 
-// prijnt max or min values
+// print max or min values
 var numbers = [2, 4, 9, 2, 0, 16, 24];
 
 var sorted = numbers.slice().sort(function(a, b) {
@@ -431,23 +431,78 @@ console.log(output); // output: 0
 // console.log(newFunction());
 
 // create a class and run program for given object
-// not working below code
-// let calc = new Calc();
-// class calc {
-//   constructor() { ... }
-//   add(val){
-//       return val
-//   }
-//   sub(){
-//       return 4
-//   }
-//   result(){
-//       return 3
-//   }
-// }
-// var res = calc.add(3).add(4).result();
+const calc = new Calculator();
+// console.log(
+//   calc
+//   .init(2)
+//   .add(2)
+//   .mul(3)
+//   .div(4)
+//   .sub(2).result // 1
+// );
 
-// console.log(res);
+//calc.alert();
+
+function Calculator() {
+  let result = 0;
+
+  this.alert = function() {
+    setTimeout(() => alert(result), 5000);
+  };
+
+  this.init = function(i) {
+    this.result = i;
+    return this;
+  };
+
+  this.add = function(i) {
+    this.result += i;
+    return this;
+  };
+
+  this.mul = function(i) {
+    this.result = this.result * i;
+    return this;
+  };
+
+  this.div = function(i) {
+    this.result = this.result / i;
+    return this;
+  };
+
+  this.sub = function(i) {
+    this.result = this.result - i;
+    return this;
+  };
+}
+
+let res = calc.init(2).add(2).mul(3).div(4).sub(2).result;
+console.log(res) // output :1
+
+const calculator = new Calc();
+let result = 0;
+function Calc() {
+    this.init = function(i) {
+    this.result = i;
+    return this;
+  };
+    this.add = function(i) {
+    this.result = this.result + i;
+    return this;
+  };
+  
+    this.sub = function(i) {
+    this.result = this.result - i;
+    return this;
+  };
+  
+    // this.result = function() {
+    //     return this.result;
+    // }
+  }
+  var resp = calculator.init(2).add(3).sub(2).result;
+
+console.log(resp); // output:3
 // assending and dessending order ends
 // A simple project in React
 
