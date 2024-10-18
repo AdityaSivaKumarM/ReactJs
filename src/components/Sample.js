@@ -503,6 +503,30 @@ function Calc() {
   var resp = calculator.init(2).add(3).sub(2).result;
 
 console.log(resp); // output:3
+
+
+
+let a1 = [1,2,3,2,3,3,4,4];
+
+ const b1 = a1.reduce((item,val) =>(item[val]=(item[val]||0)+1,item),{});
+ console.log(b1);
+
+  let name = "aditya siva";
+const result = name.split(' ').reverse().join().toUpperCase()
+console.log(result);
+
+let strs = "aditya siva";
+strs = strs.toLowerCase().replace(/\b[a-z]/g, function(letter) {
+    return letter.toUpperCase();
+});
+console.log(strs.split(' ').reverse().join()) // output:= "Siva Aditya"
+
+
+var arrList = [0, 1, [2, [3, [4, 5]]]]; 
+const arrLists = arrList.flat(3);
+//should write functional level also
+console.log(arrLists);
+
 // assending and dessending order ends
 // A simple project in React
 
