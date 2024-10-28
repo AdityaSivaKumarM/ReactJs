@@ -26,7 +26,7 @@ const Final = () => {
       console.log(error);
       setLoading(false);
       setIsError({
-        status: true,
+        status: true, 
         msg: error.message || "something went wrong...",
       });
     }

@@ -45,7 +45,7 @@ export default function App() {
 		sec: 0,
 		min: 0,
 		hr: 0
-	});
+		});
 
 	const [intervalId, setIntervalId] = useState();
 
@@ -95,4 +95,26 @@ export default function App() {
 			<button onClick={reset}>reset</button>
 		</div>
 	);
+   // (or)
+// 	const [time, setTime] = useState(0);
+//   const [start, setStart] = useState();
+//   useEffect(() => {
+//     let interval = null;
+//     if (start) {
+//       interval = setInterval(() => {
+//         setTime((prev) => prev + 10);
+//       }, 1000);
+//     } else {
+//       clearInterval(interval);
+//     }
+//     return () => clearInterval(interval);
+//   });
+//   return (
+//     <div className="App">
+//       <h1>Stop Watch</h1>
+//       <h2>{time}</h2>
+//       <button onClick={() => setStart(true)}>Start</button>
+//       <button onClick={() => setStart(false)}>Stop</button>
+//     </div>
+//   );
 }

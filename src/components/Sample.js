@@ -527,6 +527,26 @@ const arrLists = arrList.flat(3);
 //should write functional level also
 console.log(arrLists);
 
+//(or)
+function flatten(ary) {
+  var ret = [];
+ 
+
+  for(var i = 0; i < ary.length; i++) {
+      let value = ary[i];
+      try{
+         value = JSON.parse(value);
+      }catch(e){}
+      if(Array.isArray(value)) {
+          ret = ret.concat(flatten(value));
+      } else {
+          ret.push(value);
+      }
+  }
+  return ret;
+}
+
+console.log(flatten(["This is a string", 1, 2, [3], [4, [5, 6]], [[7]], 8, "[10, 11]"]));
 // assending and dessending order ends
 // A simple project in React
 
