@@ -414,11 +414,11 @@ console.log(rotatedArr);
 // output:
 //[ 3, 4, 5, 1, 2 ]
 
-var output = (function(x){
-    delete x;
-    return x;
-})(0);
-console.log(output); // output: 0
+// var output = (function(x){
+//     delete x;
+//     return x;
+// })(0);
+// console.log(output); // output: 0
 
 // the array will be going to stack overflow due to infinite loop fix this issue.
 //var list = regList([]);
@@ -547,6 +547,14 @@ function flatten(ary) {
 }
 
 console.log(flatten(["This is a string", 1, 2, [3], [4, [5, 6]], [[7]], 8, "[10, 11]"]));
+
+
+// print 1 to 100 prime numbers
+const isPrime = n => [...Array(n).keys()].slice(2).every(divisor => n % divisor !== 0)
+
+const primeNumbers = [...Array(101).keys()].filter(isPrime)
+
+console.log(primeNumbers)
 // assending and dessending order ends
 // A simple project in React
 
