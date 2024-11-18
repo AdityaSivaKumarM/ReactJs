@@ -555,6 +555,26 @@ const isPrime = n => [...Array(n).keys()].slice(2).every(divisor => n % divisor 
 const primeNumbers = [...Array(101).keys()].filter(isPrime)
 
 console.log(primeNumbers)
+
+// var a = 5;
+// (function(){
+//     console.log(a);
+//     var a =10;
+// })() // output :undefined
+function x(){
+  var a =7;
+  return a;
+}
+
+console.log(typeof x); //-- output: function
+console.log(typeof x()); //-- output:number
+console.log(a); //-- output :error because var declared in block level
+
+const array1 = [1,2,4];// add 3 value in the middle of 2 and 4 using splice or slice ;
+array1.splice(2,0, 3); // output:[1,2,3,4]
+console.log(array1)
+const array = [1,22,3,3,3,3] // remove duplicates or repeated elements count
+console.log(Object.assign({},array));
 // assending and dessending order ends
 // A simple project in React
 
