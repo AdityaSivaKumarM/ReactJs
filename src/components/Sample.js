@@ -575,6 +575,21 @@ array1.splice(2,0, 3); // output:[1,2,3,4]
 console.log(array1)
 const array = [1,22,3,3,3,3] // remove duplicates or repeated elements count
 console.log(Object.assign({},array));
+
+
+
+//duplicate array check
+const obj = {};
+
+for (let i = 0, len = things.thing.length; i < len; i++) {
+  obj[things.thing[i]['place']] = things.thing[i];
+}
+
+things.thing = new Array();
+
+ for (const key in obj) { 
+   things.thing.push(obj[key]);
+}
 // assending and dessending order ends
 // A simple project in React
 
