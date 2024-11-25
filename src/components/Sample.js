@@ -590,6 +590,67 @@ things.thing = new Array();
  for (const key in obj) { 
    things.thing.push(obj[key]);
 }
+
+// 1)a = 20;
+// console.log(a);
+// var a;
+
+// 2)b=10;
+// console.log(b);
+// let b; 
+
+// 3)let a =5;
+// if(a<5){
+// let b = " a lessthen 5";
+// }else{
+// let b = "b is grater then 5"; 
+// } 
+// console.log(b);
+
+
+function greet(name) {
+  console.log(`Hello, ${name}! My name is ${this.name}.`);
+}
+
+let person = {
+  name: "John"
+};
+
+greet.call(person, "Alice"); // Output: Hello, Alice! My name is John.
+
+
+function add(a, b) {
+  return a + b;
+}
+
+let numbers = [1, 2];
+
+console.log(add.apply(null, numbers)); // Output: 3
+
+let person1 = {
+  name: "John",
+  greet: function() {
+    console.log(`Hello, my name is ${this.name}.`);
+  }
+};
+
+let greetPerson = person1.greet.bind(person1);
+
+greetPerson(); // Output: Hello, my name is John.
+
+
+for (var i=1; i <= 20; i++)
+  {
+      if (i % 15 == 0)
+          console.log("FizzBuzz");
+      else if (i % 3 == 0)
+          console.log("Fizz");
+      else if (i % 5 == 0)
+          console.log("Buzz");
+      else
+          console.log(i);
+  }
+
 // assending and dessending order ends
 // A simple project in React
 
