@@ -1,0 +1,575 @@
+Introduction:
+
+I started my career with Napier healthcare solutions as a UI developer
+I worked for several projects relates to Healthcare domain like patient registration to Billing end to end flow.
+we do follow Agile like Groomings,spring planning , daily scrum calls
+once we got the stories we will do analysis and we will upload documentations then we will start the stories.
+ 
+so my role is to design and develop screens and integrate Restful apis and will give guidence to the team membersk
+and also in my daily activity will do the code reviews and merges to QA branches
+
+Agile process
+grooming
+sprint planing
+story points
+Demos
+restrospective meetings
+releases
+Jira
+UI documentation
+Define
+ready for development
+in progress
+code review
+testing
+BA varification
+
+Design patterns:
+----------------
+optimize the code
+reusable components
+follow coding standards
+clean folder structure
+code maintainability
+
+ 
+ 
+ 
+Required Plugins for React:
+--------------------------
+ES7 react
+React hooks snippets
+vscode react refactor
+paste json as code
+VERACODE INSTALLATION
+JAVA 17
+NODE JS
+ECLIPSE
+SUBLIME
+VS CODE
+SQL
+APACHE
+ANY DESK
+NOTE PAD ++
+MAVEN INSTALL
+POST MAN
+TEAMS
+WIN MERGE
+GIT
+Required to prepare for React:
+-----------------------------
+HTML
+CSS
+JAVASCRIPT
+REACT
+WEBPACK
+BOOTSTRAP
+TypeScript
+
+SEO's,what is structure of react,what is react,what is there in build.js files,
+how to restrict multiple re-rendering in react
+how to pass data parent to child and child to parent
+context apis
+redux 
+middle wares
+props concepts
+props drilling
+react flow structure
+
+Virtusa ,LTIMindTree,GSPANN:
+---------------------------
+what is meta in html =>(keyword,name,content,description,refresh,cookies,http-equic)<meta charset='UTF-8'>- void element
+diff bw id and class
+what if we mention footer above the input tag
+preprocessor in css =>(sass,scss,less)
+input type methods in html =>(Date,week,month,time,datetime,datetime-local,color,email,number,range,placeholder,tel,url)
+void elements =>(</br>,</hr>,<img>)
+tags(p)-formating tags  =>(<b>,<i>,<em>,<strong>,<big>,<small>,<sub>,<sup>,<del>,<mark>)
+What are CSS Selectors =>(universal,element,id,class,descendant,attribute)
+what is doctype in html =>(STF -- strict,transaltional,frameset)
+inline and inline-block
+visible hidden and visible none
+semantic and non semantic css =>(semantic table,figure,forms,article etc)
+Non semantic elements =>(<div>,<span>)
+CSS Box model =>(border,content,margin,padding)
+What are pseudo-classes in CSS? =>(::hover,::focus,::active,::link,::visited)
+what are pseudo-elements in CSS? =>(::before,::after,::first-line,::first-letter,::section)
+what is UI grid system =>(col xs,md,sm,lg,xl,xxl)
+@media properties =>(media queries -- ALL,screen,print,speech)
+mediatype 
+event handling =>(onClick,onChange ..etc)
+what is flexbox in css3?
+
+
+difference bw javascript and typescript
+javascript features
+local storage (10mb) and session storage (5mb)?
+local variables and global variables?
+let,var,const
+call,apply and bind
+null and undefined diff
+list of array methods in java scripts(splice,slice,map,filters)
+how many ways defined the objects
+what is prototype in javascript
+spread operater and can we use multiple arraylists using spread operator
+shallow copy and deep copy
+splice and slice diff
+setTimeout and setInterval diff
+variable hosting
+what is webpack
+Distructing a Object?
+Distructing a Array?
+
+Wipro:
+-----
+Q1. What are Closures, Hoiting and Semantic elements with examples?
+Q2. What is Promise?
+Q3. What is State and Stateless?
+Q4. What are Chaining methods?
+Q5. Why are react hooks useful?
+Q6. What are HOC components?
+Q7. What are fragments in react js?
+Q8. What is Redux?
+Q9. what is async,await in JS?
+Q10.what is axios?
+singletone class
+A stateless component renders output which depends upon props value, but a stateful component render depends upon the value of the state
+
+TCS:
+what is arrow function?
+What is Object?How many ways to create an  Object?
+Why are react hooks useful?
+local storage (10mb) and session storage (5mb)?
+local variables and global variables?
+let,var,const
+call,apply and bind
+what is redux?
+How do you optimise the code?
+what is lazy loading?
+what is useMemo hook?
+what is difference bw let,const,var?
+what is hoisting?
+what are life cycle methods?
+what is clean up function?in useEffect?
+difference bw spread and rest?
+How to add elements in array?
+what is generator function?
+what is callback in javascript?
+Explain closure?
+Explain call,apply and bind?
+How to pass data between component?
+How to uniquely identify the element?How to remove the duplicate elements in array?
+Lexical scope
+ES6 Features
+
+what is currying?
+------------------------
+ANS:
+====
+Currying is when you break down a function that takes multiple arguments into a series of functions that each take only one argument.
+Here's an example in JavaScript:
+
+function add (a, b) {
+    return a + b;
+}
+
+add(3, 4); // returns 7
+------------------------
+
+what is diff bw map and filter?
+-------------------------------
+'Map' is used to apply a function on every item in an array and returns the new array.
+'Filter' is used to create a new array from an existing one, containing only those items that satisfy a condition specified in a function.
+-------------------------------
+
+what is webpack?
+--------------------
+Webpack in react is a JavaScript module bundler that is commonly used with React to bundle and manage dependencies. 
+It takes all of the individual JavaScript files and other assets in a project,
+such as images and CSS, and combines them into a single bundle that can be loaded by the browser.
+--------------------
+
+what do you prefer functional component or class component?
+-----------------------------------------------------------
+Function components have become really popular because they're simpler and more flexible than class components.
+With Hooks, we can easily manage state, handle side effects, and control how components behave.
+This has made React development more straightforward and efficient.
+-----------------------------------------------------------
+
+can we use hook for class component?
+------------------------------------
+Hooks are designed to work with functional components or custom hooks only — because 
+they use the call stack of the functional components to manage the state and lifecycle of the component.
+Class components do not have this call stack, so you cannot use Hooks directly in them
+------------------------------------
+
+what is push,pop,slice and splice and there syntax?
+---------------------------------------------------
+1. slice()
+The slice() method allows you to create a new array by extracting a portion of an existing array.
+It takes two arguments: the starting index (inclusive) and the end index of the slice (exclusive). The original array remains unchanged.
+const originalArray = [1, 2, 3, 4, 5];
+const slicedArray = originalArray.slice(1, 4); // [2, 3, 4]
+2. splice()
+The Spice() method has a dual purpose: it can be used to remove elements from an array and insert new elements into an array.
+It takes three or more arguments: the starting index, the number of elements to remove, and additional elements to insert.
+const originalArray = [1, 2, 3, 4, 5];
+originalArray.splice(2, 2); // Remove elements at index 2 and 3 => [1, 2, 5]
+originalArray.splice(1, 0, 6, 7); // put 6 and 7 at index 1 and > [1, 6, 7, 2, 5]
+3. push()
+The push() method adds one or more elements to the end of an array and returns the new length of the array.
+const originalArray = [1, 2, 3];
+const newLength = originalArray.push (4, 5); // add 4 and 5 => [1, 2, 3, 4, 5]
+4. pop()
+The pop() method removes the last element from an array and returns that element.
+const originalArray = [1, 2, 3, 4, 5];
+const removedElement = originalArray.pop(); // 5 => remove [1, 2, 3, 4]
+5. shift()
+The shift() method removes the first element from the array and returns that element.
+This process also changes the pointers of the rest of the elements.
+const originalArray = [1, 2, 3, 4, 5];
+const removedElement = originalArray.shift(); // 1 => remove [2, 3, 4, 5]
+6. unshift()
+The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.
+const originalArray = [3, 4, 5];
+const newLength = originalArray.unshift(1, 2); // add 1 and 2 => [1, 2, 3, 4, 5]
+7. concat()
+The concat() method is used to merge two or more arrays.
+Returns a new array containing the combined elements of the original array.
+const array1 = [1, 2];
+const array2 = [3, 4];
+const combinedArray = array1.concat(array2); // [1, 2, 3, 4]
+8. indexOf() and lastIndexOf()
+The IndexOf() method returns the first index of the given element that can be found in the array, or -1 if the element does not exist. The LastIndexOf() method works the same way, but starts searching at the end of the array.
+const originalArray = [1, 2, 3, 2, 4];
+const firstIndex = originalArray.indexOf (2); // 1
+const lastIndex = originalArray.lastIndexOf (2); // 3
+---------------------------------------------------
+
+How to pass the data from child to parent and from parent to child?
+-------------------------------------------------------------------
+In the parent component, create a callback function. This callback function will retrieve the data from the child component. Pass the callback function to the child as a prop from the parent component.
+The child component calls the parent callback function using props and passes the data to the parent component.
+-------------------------------------------------------------------
+
+what is axios and fetch api?which one to use on which situation?
+---------------------------------------------------------------
+Axios provides the data in the response object, while fetch() provides the response object itself, 
+which contains other information such as status, headers, and url. Axios handles errors in the catch block, 
+while fetch() only rejects the promise if there is a network error, not if the response has an error status
+----------------------------------------------------------------
+
+what is state?
+Stateful Components: Use them when you need to manage state, lifecycle methods, or 
+when dealing with complex UI logic that requires the component to keep track of changes over time.
+
+Stateless Components: Ideal for presentational components that focus solely on the UI and do not require any state management. 
+They are more readable and easier to test.
+
+coding questions:
+palindrome
+two array equal array check
+dynamic table data iteration action button
+reverse string
+Html storage
+Geo location in html
+Authentication vs Authorization
+print below number format:
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+
+let numbers =[ 469,755,244,245,758,450,302,20,712,71,456,21,398,339,882,848,179,535,940,472];
+let evenNumbers = [] 
+for (let i = 0; i < numbers.length; i++) { if(numbers[i] % 2 === 0) { evenNumbers.push(numbers[i]); } } 
+
+console.log(evenNumbers);
+
+EPAM:
+----
+what is temporal deal zone?
+Explain how does understands JSX/JS?
+Write a logic to count the repeating number of characters in a string?
+Write a logic to move all O's to end in an array?
+Explain promisses and how it works?
+What are the pure functions?
+What is polyfill?Write a polyfill for foreach method?
+What do you mean by synchronous and asynchronous?
+ES6/ES7 things you have used?
+Why do we need arrow functions?
+What does Object.freeze does?
+What is event bubbling and how to prevent it?
+What is semantic HTML?name some Semantic HTML tags?
+Difference between ID and Class in HTML tags?
+What do you mean by CSS box model?
+Explain CSS specificity?
+Diffent positioning elements?
+Make a automated time using Reactjs?
+Explain Different life cycle methods?
+Difference between pure components and normal components?
+What is context Api?
+What is HOC?
+Controlled and unControlled Components?
+How do we write a functional setState and what is the use of it?
+Why are react hooks useful?
+types of styles?
+
+GSPANN:
+------
+What is Object?
+Create object and Array Destructing?
+ES6 Features?
+what are the new features in react 16?
+What are React Packages?
+What are Format tags in HTML?
+Write reverse of string without using method?
+What is use of useEffect?
+What are react Hooks?
+vissible hidden and vissible none?
+What are react hooks?
+
+What is stateless and stateful components in react?
+---------------------------------------------------
+ANS:A stateless component renders output which depends upon props value, but a stateful component render depends upon the value of the state.
+---------------------------------------------------
+
+what are the class based components which never used in React?
+--------------------------------------------------------------
+•ANS:componentDidMount, componentDidUpdate, componentWillUnmount: 
+The useEffect Hook can express all combinations of these (including less common cases).
+--------------------------------------------------------------
+
+what are the new features in react 16?
+--------------------------------------
+React 16 introduced new features like React Fiber, Error Boundaries,Fragments, Portals, and improved server-side rendering.
+React Fiber is a new reconciliation engine that improves performance and enables incremental rendering.
+Error Boundaries allow developers to catch and handle errors in components.
+Portals provide a way to render children into a different DOM subtree.
+Improved server-side rendering with support for streaming and faster rendering.
+React 16 also introduced new lifecycle methods like `componentDidCatch` and `getDerivedStateFromProps`.
+React 16 is the first version of React built on top of a new core architecture, which is named “Fiber”. 
+The new features in React v16.0 i.e. error boundaries, fragments, portals and async rendering have been made possible due to Fiber.
+--------------------------------------
+
+what is diff bw spread and rest operator?
+-----------------------------------------
+ANS: 
+Spread operator allows an iterable to be expanded in places where zero or more arguments are expected.
+ Rest operator collects all the remaining elements into an array.
+
+Spread operator is denoted by three dots (...)
+
+Spread operator can be used to copy an array or object
+
+Rest operator is also denoted by three dots (...) and is used in function parameters to collect all remaining arguments into an array
+-----------------------------------------
+
+what are pure functions?
+------------------------
+ANS:Pure functions are functions that always return the same output for the same input and have no side effects.
+
+Always return the same output for the same input
+
+Have no side effects, meaning they do not modify external state or variables
+
+Pure functions are predictable and easier to test and debug
+------------------------
+
+Cognizant:
+
+1)How do you avoid re-rendering of a component? With useEffect second parameter, should ComponentUpdate?
+
+To avoid re-rendering, use shouldComponentUpdate or React.memo
+
+Use shouldComponentUpdate to compare current and next props/state
+
+Use React.memo to memoize functional components
+
+Use useMemo to memoize expensive computations
+
+Use useCallback to memoize event handlers
+
+Use PureComponent for class components
+
+2)What are the ways to handle Errors in React?
+Error handling in React can be done using try-catch blocks, error boundaries, and handling asynchronous errors.
+
+Use try-catch blocks to handle synchronous errors
+
+Use error boundaries to catch errors in child components
+
+Handle asynchronous errors using promises or async/await
+
+Use third-party libraries like Sentry or Bugsnag for better error tracking
+
+Display user-friendly error messages to improve user experience
+
+
+3)What is Lazy Loading, Suspense. How do they work?
+Lazy Loading and Suspense are techniques used to improve performance by loading components and data only when needed.
+
+Lazy Loading delays the loading of non-critical resources until they are needed, reducing initial load time.
+
+Suspense allows components to wait for data to load before rendering, improving user experience.
+
+Lazy Loading and Suspense can be used together to optimize performance and user experience.
+
+Example: A website with a large image gallery can use Lazy Loading to only load images as the user scrolls down the page, reducing initial load time.
+
+Example: A React component can use Suspense to wait for data to load before rendering, preventing empty or broken components from being displayed.
+
+
+
+4)Explain useState, useEffect Hooks.?
+useState and useEffect are React Hooks used for managing state and side effects respectively.
+
+useState is used to manage state in functional components
+
+It returns an array with two elements - the current state value and a function to update the state
+
+useEffect is used to manage side effects like fetching data or updating the DOM
+
+It takes a function as its argument and runs it after every render
+
+useEffect can also take a second argument which is an array of dependencies to control when the effect runs
+
+
+
+
+5)How componentWillUnmount works?
+componentWillUnmount is a lifecycle method in React that is called right before a component is unmounted and destroyed.
+
+componentWillUnmount is used to perform any necessary cleanup tasks before a component is removed from the DOM.
+
+It is commonly used to cancel any pending network requests, remove event listeners, or clear timers or intervals.
+
+The method is called automatically by React when a component is about to be unmounted.
+
+It is important to clean up any resources or subscriptions to prevent memory leaks or unexpected behavior.
+
+Here is an example of how componentWillUnmount can be used to remove an event listener: componentWillUnmount() { window.removeEventListener('resize', this.handleResize); }
+
+
+6)How to optimize React APP?
+Lazy, Suspense, Error Boundary, forceUpdate, pureComponent, memo, Hooks in Functional Components, fragments, avoid re-renders as much as we can etc
+
+7)what are refs?
+Refs are a way to access DOM nodes or React components directly. They can be used to get input values.
+
+Refs provide a way to access DOM nodes or React components directly.
+
+They are commonly used to get input values or trigger imperative animations.
+
+Refs can be created using the `createRef()` method or by using a callback function.
+
+To get the value of an input using refs, you can assign a ref to the input element and access its value property.
+
+8)How React works?
+React is a JavaScript library for building user interfaces that uses a virtual DOM to efficiently update the UI.
+
+React creates a virtual DOM to represent the UI components.
+
+When state or props change, React compares the virtual DOM with the actual DOM and updates only the necessary parts.
+
+React uses a component-based architecture to build reusable UI elements.
+
+React uses JSX, a syntax extension for JavaScript, to write components in a more declarative way.
+
+
+8)How do you make a page responsive. Bootstrap layouts and alerts?
+
+To make a page responsive, use Bootstrap layouts and alerts.
+
+Use Bootstrap's grid system to create responsive layouts
+
+Use media queries to adjust the layout based on screen size
+
+Use Bootstrap's responsive utility classes to hide/show elements on different devices
+
+Use Bootstrap's responsive navigation components for mobile-friendly menus
+
+Use Bootstrap's responsive images to ensure they scale properly
+
+Use Bootstrap's responsive embeds for videos and other media
+
+Use Bootstrap's responsive breakpoints to customize the layout for different screen sizes
+
+Use Bootstrap's alerts to display important messages to users
+
+(or)
+The bootstrap class is .container-fluid,it makes any device responsiveness whatever content on page.
+
+
+
+Q4. Why is arrow function used
+Ans. Arrow functions are used for concise syntax, lexical scoping of 'this', and implicit return of single expressions.
+Arrow functions have a more concise syntax compared to traditional function expressions.
+
+Arrow functions do not bind their own 'this' value, instead they inherit 'this' from the containing scope.
+
+Arrow functions automatically return the result of a single expression without needing the 'return' keyword.
+
+
+Q6. How Redux Works?
+Ans. Redux is a predictable state container for JavaScript apps.
+Redux stores the entire state of the application in a single immutable object.
+
+Actions are dispatched to describe state changes.
+
+Reducers specify how the state changes in response to actions.
+
+Components can subscribe to the Redux store to access the state.
+
+Redux helps manage the state of complex applications and makes it easier to debug and test.
+
+Example: dispatching an action to add an item to a shopping cart.
+
+1)best practice for design pattern?
+The best practice design pattern for software testing is the Page Object Model (POM).
+
+POM separates the test logic from the UI, making tests more maintainable and reusable.
+
+It improves test readability and reduces code duplication.
+
+POM promotes modularity and allows for easier test maintenance and scalability.
+
+It enhances collaboration between developers and testers.
+
+Example: Using POM, each page of a web application is represented as a separate class, encapsulating the page elements and their related actions.
+
+2)diff bw ref and out?
+ref is used for passing a variable by reference, out is used for returning a variable by reference
+
+ref is used for passing a variable by reference, allowing the method to modify the variable
+
+out is used for returning a variable by reference, typically used for returning multiple values from a method
+
+Example: int x = 10; SomeMethod(ref x); // x can be modified inside SomeMethod
+
+Example: int result; SomeMethod(out result); // result is returned by SomeMethod
+
+
+1)what is RXJS?
+RxJS operators are functions that enable complex asynchronous code to be easily composed in a declarative manner.
+
+RxJS operators are used to manipulate the observables and perform operations like filtering, mapping, reducing, etc.
+
+Some commonly used RxJS operators include map, filter, mergeMap, switchMap, catchError, tap, debounceTime, etc.
+
+Example: Using map operator to transform the emitted values from an observable stream.
+
+2)diff Redux and context API?
+
+Redux
+-----
+Uses a centralized store, actions, and reducers to modify state in a predictable way. 
+Redux is better for complex projects that require centralized state management and predictable data flow. It's also a good alternative for prop drilling. 
+However, Redux can have a complex and extensive syntax, and it requires adding more libraries to the application bundle.
+
+Context API
+-----------
+Uses a decentralized approach, where the state is passed through the component tree using the provider and consumer components. 
+Context API is better for simpler applications or when you need to avoid prop drilling. 
+It's also easier to use, with a short learning curve and less code required. However, Context API doesn't require you to set up a centralized store. 
