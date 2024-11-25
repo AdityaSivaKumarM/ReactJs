@@ -1,0 +1,73 @@
+OPVM:	
+
+render status
+
+same visit lo bill generate aythe select package first validation remove cheyali
+
+cancel query need to call given by kiran
+
+
+remaining qty issue in pop up
+dt seq id and new obj not coming some times from update scenario 
+default expand works only for when pop up have single package , it should work for multiple also
+if package validation completed after selcting plus icon need remove package record from grid also
+6.	grid allignments should be proper
+10.	column diff need to check for active and history packages
+failure:
+bill print showing empty if services are zero
+DW lo Remaing needs to update in pop up
+right side and left side default package should be load
+Priority:
+bill print showing empty if services are zero
+after click plus icon don't add package without services should warn a message
+16. if we cancel the package do not allow to select link
+cancel visit should call cancel api for mvp
+MVP_DT_SEQ_ID
+MVP_HD_SEQ_ID
+selection deselection if we use multi package
+cancelupdate function need to add in bill details cancel also
+3.	package icons should give in bill details
+Remaining value -1 ravoddu in pop up
+billgenereateseqid update function
+hd seq needs to come from billing response
+after package cancelled grid need to refresh
+ordering quantity should be update if we select from grid
+add some operation if we select service without package then show message while clicking on save, update ,
+loader needs to add in pop up
+need to be disable ordering qty field while service is loading & d't enter more than remaning qty   - priority
+4.	if we select service check box in grid remaing services also selected should restrict as only one check box should select in visit grid.
+if we select one service and package to cancel how to handle
+need to get all service list if we select package while cancel
+obj saving multiple times on save need to check  - done
+after cancel the package no need to add again
+add new services in second visit update failed - done
+if we deselect package services also need to de select. - done
+if bill generated in same patient not need to show package in visit grid and no need to give permission to add - priority
+duplicate package should not allow in same visit
+min value need to add orderqty
+package should not shown in next visit 
+package service count   8367498177
+14.	check if we select multi selection in visit grid how to set data - done
+11.	Upon hovering over the service name or Multi-visit Package service icon, system shall Display package name. - done
+18.select package and service, deselect package again , sevice also automatically deselect - done
+1.	multi visit count - done
+15. in edit mode no need to show message for service selection please select package first , so what we need to do  - done
+2.	multi visit package link should be enable with count of services after assign package to patient, only quantity should be enabled - done
+5.	if we select link in update or save already selected services checkboxes should be in disable mode.only quantity should be enabled - done
+in pop up default first package or selected package should be select.  -- done
+7.	System shall not allow to check the checkbox against a service if remaining qty. for the same is 0.  - done
+16)close button need to add.  -- done
+12) after adding services from popup some times services showing multiple times more than quantity--done
+18)if quantity not entered select should be in disable mode. -- done
+17)in save multivisitpkglist should send all services which are related to that package not only selected one.--done
+2)in list grid package, service order should be change like after packages services should show  -- done
+11)after clicking on grid level link showing wrong popup -- done
+duplicates need to check in pop up -- done
+6)grid level package link selection pop up  - done
+5)check box selection should be for service name  - done
+4)if deselect the check box index data should be clear - done
+9)check all should be hide  --- done
+3)qty should be number , should restrict other chars  --- done
+1) on change quantity remaining qty and availed qty should be change  ---- done 
+
+ 	
