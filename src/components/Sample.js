@@ -651,6 +651,39 @@ for (var i=1; i <= 20; i++)
           console.log(i);
   }
 
+
+  // // Online Javascript Editor for free
+// // Write, Edit and Run your Javascript code using JS Online Compiler
+
+// console.log("Try programiz.pro");
+
+// const employees = [
+//   { name: 'Alice', department: 'HR', salary: 50000 },
+//   { name: 'Bob', department: 'Engineering', salary: 60000 },
+//   { name: 'Charlie', department: 'HR', salary: 55000 }
+// ];
+
+// // Output -> { HR: ['Alice', 'Charlie' ], Engineering: ['Bob'] }
+                             
+// const dupArr = [{name: "pj", count: 2}, {name: "ram", count: 3}, {name: "head", count: 2}, {name: "shm", count: 4}]
+
+// //const output = [{name: "pj", count: 2}, {name: "ram", count: 3},{name: "shm", count: 4}                             
+const person = {
+  firstName: "Helen",
+  lastName: "Ryan",
+  getFirstName: function () {
+  console.log(this.firstName)
+  },
+  getArrowName: () => console.log(this.firstName)// undefined
+};
+const firstName = "kevin";
+ 
+console.log(person.getFirstName());// undefined
+console.log(person.getArrowName());// undefined
+                   
+
+
+
 // assending and dessending order ends
 // A simple project in React
 
