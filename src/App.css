@@ -49,3 +49,8 @@
  .button { padding: 0.4em; }
  .blue { background-color: blue; }
  .green { background-color: green; }
+
+
+ .navigation button {
+  min-width: 100px;
+}

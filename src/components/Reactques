@@ -56,6 +56,10 @@ POST MAN
 TEAMS
 WIN MERGE
 GIT
+Packages:
+---------
+npm i react-circular-progressbar
+npm i react-bootstrap
 Required to prepare for React:
 -----------------------------
 HTML

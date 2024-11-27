@@ -7,17 +7,18 @@ import TODO from './TODO/TodoList';
 import './App.css';
 import Final from './components/UseEffect-Ex2';
 import Index from './components/UseEffect-Ex1';
-import SampleList from './Example1/sampleList';
 import UseRefHook from './components/UseRefHook';
 import ReducerTutorial from './components/UseReducerHook';
-import UseMemoHook from './components/UseMemoHook';
+import TodoList from './components/TodoList';
 import ProgressStatusBar from './components/persentageStatus';
-import UseCallbackHook from './components/UseCallbackHook';
+import dropDownSel from './components/dropDownSel';
 import Clock from './components/clock';
-import ArticlesSorting from './articles';
+import ArticlesSorting from './ArticlesSort';
 import CountrySel from './components/countryCitySel';
+import PaginationArticles from './components/PaginationArticles';
+import GuestForm from './components/GuestForm';
 
-const App = () =>{
+const App = ({articles}) =>{
 
     return (
     <div>
@@ -29,17 +30,19 @@ const App = () =>{
       {/* <PatReg></PatReg> */}
      {/* <UseEffectHook></UseEffectHook> */}
      {/* <Final></Final> */}
-     {/* <ArticlesSorting></ArticlesSorting> */}
+     <GuestForm></GuestForm>
+     <ArticlesSorting articles={articles}></ArticlesSorting>
      <CountrySel></CountrySel>
      {/* <Index></Index> */}
        {/* <UseRefHook></UseRefHook>  */}
-       {/* <UseCallbackHook></UseCallbackHook> */}
+       {/* <dropDownSel></dropDownSel> */}
       {/* <UseEffectHook></UseEffectHook>
       <ReducerTutorial></ReducerTutorial> */}
-      {/* <UseMemoHook></UseMemoHook> */}
+      {/* <TodoList></TodoList> */}
      
       {/* <Clock></Clock> */}
-      {/* <ProgressStatusBar></ProgressStatusBar> */}
+      <ProgressStatusBar></ProgressStatusBar>
+      {/* <PaginationArticles></PaginationArticles> */}
     </div>
     )
   

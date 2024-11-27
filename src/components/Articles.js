@@ -1,6 +1,6 @@
 import React from "react";
 
-const Articles = ({ articles }) => {
+const Articles = ({articles}) => {
   return (
     <div className="card w-50 mx-auto">
       <table>

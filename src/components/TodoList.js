@@ -2,7 +2,7 @@
 import React from 'react'
 import { useState } from 'react'
 
-const UseMemoHook = () => {
+const TodoList = () => {
     const [list,setList] = useState([]);
     const [message,setMessage]=useState({
         id:"",
@@ -119,4 +119,4 @@ const UseMemoHook = () => {
   )
 }
 
-export default UseMemoHook
+export default TodoList

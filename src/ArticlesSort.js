@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Articles from "./components/Articles";
+import ButtonGroup from "react-bootstrap/ButtonGroup"; 
+import Button from "react-bootstrap/Button"; 
 
 const title = "React Sorting articles";
 
-function ArticlesSorting({ articles }) {
+function ArticlesSorting({articles}) {
   const [articlesList, setArticlesList] = useState(articles);
 
   const sortByUpvotes = () => {
@@ -47,20 +49,20 @@ function ArticlesSorting({ articles }) {
         <label className="form-hint mb-0 text-uppercase font-weight-light">
           Sort By
         </label>
-        <button
+        <Button
           data-testid="most-upvoted-link"
-          className="small"
+          className="small" variant="success"
           onClick={() => sortByUpvotes()}
         >
           Most Upvoted
-        </button>
-        <button
+        </Button>
+        <Button
           data-testid="most-recent-link"
-          className="small"
+          className="small" variant="success"
           onClick={() => sortByDates()}
         >
           Most Recent
-        </button>
+        </Button>
       </div>
       <Articles articles={articlesList} />
     </div>
