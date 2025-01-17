@@ -137,24 +137,15 @@ let original1 = "Hello World";
  console. log(reversed1);
 
 		
-//remove duplicates in string:
-//with using method:
+
+//reverse of string with using method:
 function wordsReverser(string){
 return string.split("").reverse().join("").split(" ").reverse().join(" ")  
 }
 
 console.log(wordsReverser('New string, same results.'))
 
-  var arr1 =[2,4,5,6,7]
-  var arr2 =[9,4,5,8,1]
-  //output: print unique values in both arrays
-  const uniqueTags = [];
-images.map(img => {
-    if (uniqueTags.indexOf(img.tag) === -1) {
-        uniqueTags.push(img.tag)
-    }
-});
-
+//remove duplicates in string:
 let str = "000234239999233";
 const duplicateString = function(){
     let dupArray = str.split("");
@@ -266,7 +257,7 @@ Object.assign({}, ['a','b','c']); // converted array to object{0:"a", 1:"b", 2:"
 // { a: "a", b: "b", c: "c" }
 console.log(obj);
 
-//Remove duplicates starts
+/* Remove duplicates starts */
 let arry = [10,20,30,10,15,20,25,40];
 let newArray =[];
 for(let i=0;i<arry.length;i++){
@@ -285,7 +276,7 @@ console.log(newArray);
         return arr.indexOf(obj) == index
     })
     console.log(duplicate);
-//Remove duplicates ends
+/* Remove duplicates ends */
 
 // string charactor count starts
  let strg = "Hyderabad";
@@ -311,14 +302,11 @@ console.log(sortArray);
 // program to count the number of vowels in a string
 
 function countVowel(str) { 
-
     // find the count of vowels
     const count = str.match(/[aeiou]/gi).length;
-
     // return number of vowels
     return count;
 }
-
 // take input
 const string = prompt('Enter a string: ');
 
@@ -331,18 +319,15 @@ console.log(result);
 
 // defining vowels
 const vowels = ["a", "e", "i", "o", "u"]
-
 function countVowel(str) {
     // initialize count
     let count = 0;
-
     // loop through string to test if each character is a vowel
     for (let letter of str.toLowerCase()) {
         if (vowels.includes(letter)) {
             count++;
         }
     }
-
     // return number of vowels
     return count
 }
@@ -534,9 +519,7 @@ function flatten(ary) {
 
   for(var i = 0; i < ary.length; i++) {
       let value = ary[i];
-      try{
-         value = JSON.parse(value);
-      }catch(e){}
+      value = JSON.parse(value);
       if(Array.isArray(value)) {
           ret = ret.concat(flatten(value));
       } else {
@@ -683,7 +666,56 @@ console.log(person.getArrowName());// undefined
                    
 
 
+// pyramid alphabets
+let n = 4; // you can take input using prompt or change the value
+let string = "";
+let count = 0;
+// External loop
+for (let i = 1; i <= n; i++) {
+  for (let j = 0; j < i; j++) {
+    string += String.fromCharCode(count + 65);
+    count++; // increment cause next alphabet
+  }
+  string += "\n";
+}
+console.log(string);
 
+
+// sort the array by name or age
+const array = [{name: 'xyz', age: 78}, {name: 'abc', age: 54}, {name: 'pqrs', age: 89}];
+// sort by age
+const sortByAge = array.sort((a,b)=> a.age - b.age);
+console.log(sortByAge);
+
+// sort by name
+const sortByName = array.sort((a,b)=> a.name.localeCompare(b.name));
+console.log(sortByName);
+
+// print count of characters and aslo print not repeating charactors
+const string = "aacababbce" // output: a4b3c2 need to solve
+
+// print the largest count of character
+var arr = [1,1,2,2,2,3,3,4,4,4,4,4,5,5];
+    var charCount = {}; 
+    var largest = 0; 
+    var res;
+    for (var v in arr) {
+      charCount[arr[v]] = (charCount[arr[v]] || 0) + 1;
+      if (charCount[arr[v]] > largest) { 
+        largest = charCount[arr[v]]; // largest: 5 means 4 value repeated 5 times
+        res = arr[v]; // output:4 means largest repeated number is 4
+      }
+
+    }
+    var results = [];
+    for (var k in charCount){
+      if (charCount[k] == largest){
+        //console.log(k + " occurs " + counts[k] + " times");
+        results.push(k);
+      }
+    }
+    console.log(res);//output:4
+    console.log(results);//output:['4']
 // assending and dessending order ends
 // A simple project in React
 

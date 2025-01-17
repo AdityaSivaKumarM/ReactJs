@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Articles from "./components/Articles";
+import Articles from "./Articles";
 import ButtonGroup from "react-bootstrap/ButtonGroup"; 
 import Button from "react-bootstrap/Button"; 
 

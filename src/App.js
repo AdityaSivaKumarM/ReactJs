@@ -13,10 +13,10 @@ import TodoList from './components/TodoList';
 import ProgressStatusBar from './components/persentageStatus';
 import dropDownSel from './components/dropDownSel';
 import Clock from './components/clock';
-import ArticlesSorting from './ArticlesSort';
+import ArticlesSorting from './components/SortingArticles/ArticlesSort';
 import CountrySel from './components/countryCitySel';
 import PaginationArticles from './components/PaginationArticles';
-import GuestForm from './components/GuestForm';
+import GuestForm from './components/MealSchedule/GuestForm';
 
 const App = ({articles}) =>{
 
