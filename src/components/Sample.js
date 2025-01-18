@@ -716,6 +716,37 @@ var arr = [1,1,2,2,2,3,3,4,4,4,4,4,5,5];
     }
     console.log(res);//output:4
     console.log(results);//output:['4']
+
+
+    
+var arr = [1,2,3,2,1,2,1,1,2,3,4]
+function val(arr) {
+        var t = [];
+        for(i= 0; i < arr.length; i++){
+            var count =0;
+            for(j = 0; j < arr.length; j++) {
+                if(arr[j] == arr[i]) {
+                    count++;
+                }
+            }
+            if(count > 1) {
+                console.log("value ---  " + arr[i] + " counter --  "  + count);
+            }
+        }
+    }
+    val(arr);
+    //output:
+// value ---  1 counter --  4
+// value ---  2 counter --  4
+// value ---  3 counter --  2
+// value ---  2 counter --  4
+// value ---  1 counter --  4
+// value ---  2 counter --  4
+// value ---  1 counter --  4
+// value ---  1 counter --  4
+// value ---  2 counter --  4
+// value ---  3 counter --  2
+    
 // assending and dessending order ends
 // A simple project in React
 
@@ -730,3 +761,17 @@ var arr = [1,1,2,2,2,3,3,4,4,4,4,4,5,5];
 // Integrate with APIs to fetch and display data
 
 // Style components using CSS or a CSS framework like Bootstrap
+
+
+// gitHub links for react and javascript code practice
+// https://github.com/tkssharma/CRACK_JS_INTERVIEWS
+// https://github.com/Vasu7389/JavaScript-Interview-Questions
+// https://github.com/Devinterview-io/javascript-interview-questions
+// https://github.com/freeranger/react-bootstrap-tabs-demo
+// https://github.com/Ashwin7mak/hackerrank-react-challenges
+// https://github.com/GowriKrishnamurthy/React-sorting-articles
+// https://github.com/AdityaSivaKumarM  -- me
+// https://github.com/arjungautam1/Navbar-Demo
+// https://github.com/sudheerj/javascript-interview-questions
+// https://www.studytonight.com/javascript/
+// https://redux.js.org/tutorials/typescript-quick-start
