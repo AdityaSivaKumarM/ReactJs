@@ -582,13 +582,13 @@ things.thing = new Array();
 // console.log(b);
 // let b; 
 
-// 3)let a =5;
-// if(a<5){
-// let b = " a lessthen 5";
-// }else{
-// let b = "b is grater then 5"; 
-// } 
-// console.log(b);
+  // 3)let a =5;
+  // if(a<5){
+  // let b = " a lessthen 5";
+  // }else{
+  // let b = "b is grater then 5"; 
+  // } 
+  // console.log(b);
 
 
 function greet(name) {
@@ -717,11 +717,51 @@ var arr = [1,1,2,2,2,3,3,4,4,4,4,4,5,5];
     console.log(res);//output:4
     console.log(results);//output:['4']
 
+// club the array of object elements and show the count
+const arrs = [{apple:2,orange:1,banana:3,grapes:1},
+  {apple:2,orange:1,banana:3},
+  {apple:2,orange:1,banana:3,grapes:2}];
+  
+function countData(){
+return arrs.reduce((countObj,item)=>{
+Object.keys(item).forEach((val)=>{
+ if(countObj[val]){
+     countObj[val] += item[val];
+ }else{
+     countObj[val] = item[val];
+ }
+})
+return countObj
+})
 
-    
+}         
+console.log(countData());
+//output:
+//{ apple: 6, orange: 3, banana: 9, grapes: 3 }
+
+const scoreList = [{Sno:1,score:20},
+  {Sno:2,score:30},
+  {Sno:1,score:50},
+  {Sno:2,score:10}];
+   
+let newArr=[];
+scoreList.map((item)=>{
+let res = newArr.find((x)=>x.Sno == item.Sno)
+if(res){
+res.score += item.score;
+}else{
+newArr.push(item);
+}
+})
+
+console.log(newArr);
+
+//output:
+//[ { Sno: 1, score: 70 }, { Sno: 2, score: 40 } ]
+
+
 var arr = [1,2,3,2,1,2,1,1,2,3,4]
 function val(arr) {
-        var t = [];
         for(i= 0; i < arr.length; i++){
             var count =0;
             for(j = 0; j < arr.length; j++) {

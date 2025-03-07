@@ -577,3 +577,8 @@ Context API
 Uses a decentralized approach, where the state is passed through the component tree using the provider and consumer components. 
 Context API is better for simpler applications or when you need to avoid prop drilling. 
 It's also easier to use, with a short learning curve and less code required. However, Context API doesn't require you to set up a centralized store. 
+
+1)reconciliation in react
+2)server side rendering
+3)hocs
+4)custom hooks

@@ -34,7 +34,7 @@ export default function App() {
 
 //      let time  = new Date().toLocaleTimeString()
 
-//   const [ctime,setTime] = useState(time)
+//   const [ctime,setCtime] = useState(time)
 //   const UpdateTime=()=>{
 //     time =  new Date().toLocaleTimeString()
 //     setTime(time)
@@ -53,7 +53,8 @@ export default function App() {
 		setTime((prev) => {
 			let newTime = { ...prev };
 			// update sec and see if we need to increase min
-			if (newTime.sec < 59) newTime.sec += 1;
+			if (newTime.sec < 59) 
+			newTime.sec += 1;
 			else {
 				newTime.min += 1;
 				newTime.sec = 0;
