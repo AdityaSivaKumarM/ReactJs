@@ -1,6 +1,7 @@
 // You're tasked with building a simple TODO list application in React. The application should allow users to:
 
 import { object } from "prop-types";
+import { useImperativeHandle, useRef } from "react";
 
  
 // Add a new TODO item.
@@ -786,7 +787,72 @@ function val(arr) {
 // value ---  1 counter --  4
 // value ---  2 counter --  4
 // value ---  3 counter --  2
-    
+
+function reverseWords(str) {
+  var string = str.split('').reverse().join('');
+ return string.split(' ').reverse().join(' ').split(' ').reverse().join(' ');
+}; 
+
+console.log(reverseWords('The quick brown fox jumps over the lazy dog.'));
+
+// output : .god yzal eht revo spmuj xof nworb kciuq ehT
+
+//Output [ ‘ehT’, ‘kciuq’, ‘nworb’, ‘xof’, ‘spmuj’, ‘revo’, ‘eht’, ‘yzal’, ‘.god’ ]
+
+var employeeList=[{
+  "name":"likitha",
+  "age":30
+  },{
+  "name":"Roman",
+  "age":30
+  },{
+  "name":"Ramesh",
+  "age":25
+  },{
+  "name":"Prakash",
+  "age":27
+  }]
+  
+const filteredArr = employeeList.reduce((acc, current) => {
+const x = acc.find(item => item.age === current.age);
+if (!x) {
+  return acc.concat([current]);
+} else {
+  return acc;
+}
+}, []);
+
+console.log(filteredArr);
+
+//output : [
+//   { name: 'likitha', age: 30 },
+//   { name: 'Ramesh', age: 25 },
+//   { name: 'Prakash', age: 27 }
+// ]
+
+
+// useRef coding examples
+// useImperativeHandle
+// debounce
+// throttling
+// create login screen using useRef
+// create custom hooks
+// Error
+// Warning: Can't perform a React state update on an unmounted component.
+
+// Solution
+// You can declare let isMounted = true inside useEffect, 
+// which will be changed in the cleanup callback, as soon as the component is unmounted. 
+// Before state updates, you now check this variable conditionally:
+
+// useEffect(() => {
+//   let isMounted = true;               // note mutable flag
+//   someAsyncOperation().then(data => {
+//     if (isMounted) setState(data);    // add conditional check
+//   })
+//   return () => { isMounted = false }; // cleanup toggles value, if unmounted
+// }, []);                               // adjust dependencies to your needs
+
 // assending and dessending order ends
 // A simple project in React
 
