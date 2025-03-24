@@ -582,3 +582,98 @@ It's also easier to use, with a short learning curve and less code required. How
 2)server side rendering
 3)hocs
 4)custom hooks
+
+
+
+Javascript interview Questions?
+
+1.What is the difference between 'Pass by Value' and 'Pass by Reference'?
+2. What is the difference between map and filter ?
+3. What is the difference between map() and forEach() 
+5. What are the differences between call(), apply() and bind() ?
+6. List out some key features of ES6 ?
+7. What’s the spread operator in javascript ?
+8. What is rest operator in javascript ?
+9. What is temporal dead zone ?
+10. What is a polyfill in javascript ?
+11. What is prototype in javascript ?
+12. What is IIFE ?
+13. What are the different datatypes in javascript ?
+14. What is authentication vs authorization ?
+15. Difference between null and undefined ?
+16. What is the output of 3+2+”7” ?
+17. Slice vs Splice in javascript ?
+18. What is destructuring ?
+19. What is setTimeOut in javascript ?
+20. What is setInterval in javascript ?
+21. What are Promises in javascript ?
+22. What is a closure ?
+23. What are callbacks in javascript ?
+24. What are Higher Order Functions in javascript ?
+25. What is the difference between == and === in javascript ?
+26. What is Hoisting ?
+27. What are the differences let, var and const ?
+28. What are limitations of arrow functions?
+29. What is the difference between Shallow copy and deep copy ?
+30. What is event bubbling
+31. What is event capturing ?
+32. How do you optimize the performance of application
+33. What is meant by debouncing and throttling?
+34. what is promise chain?
+35.What is eventloop?
+36. What is async and await?
+37. write an example of closure?
+38. write a general promise?
+39. what is lexical scope?
+
+Javascript practical questions?
+1. find the longest length of a string in given sentance?
+2. display the charcter count in the string? ("abbcdddefg"
+3.Remove the duplicate age object in an array?
+	var employeeList=[{
+		"name":"likitha",
+		"age":30
+		},{
+		"name":"Roman",
+		"age":30
+		},{
+		"name":"Ramesh",
+		"age":25
+		},{
+		"name":"Prakash",
+		"age":27
+		}]
+4. Display the longest substring in the string ?
+5. some code snippets related to var and let
+
+React JS questions?
+
+1. what are state & props?
+2. How you implement routing?
+3. suppose if I have button, when I click on that button it should navigate to another page , how you implement that one?
+4.how to pass data from one page to another page through route?
+5. diff b/w useMemo & useCallback?
+6. explain the scenario where you use useMemo and useCallback in your project?
+7. How to do statemanagemnt in the React?
+8. explain the architecture of a Redux?
+9. what is the difference between useEffect and useLayoutEffect?
+10. what is the purpose of useRef?
+11.write a code for navigation?
+12. display userform with username, age, emailId and display those details in the table?
+13.Take a nested objects and display the address field and street name in the form?
+14.what is react fiber?
+15. how to check the performance of a component render in react?
+16. how to debug the code?
+
+HTML & CSS
+
+1. what are schematic elements?
+2. what is the difference b/w localStorage and sessionStorage?
+3. what is diff b/w mp and weak map
+4. what are the positions in CSS?
+5. Diff b/w display:none and visibility:hidden?
+6. what is flex box?
+7. what are css preprocessors and explain?
+8. what is css box model?
+
+6. 
