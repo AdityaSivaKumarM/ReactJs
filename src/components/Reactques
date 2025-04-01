@@ -60,6 +60,7 @@ Packages:
 ---------
 npm i react-circular-progressbar
 npm i react-bootstrap
+Redux dev tool extension need to install in chrome browser
 Required to prepare for React:
 -----------------------------
 HTML
@@ -582,6 +583,11 @@ It's also easier to use, with a short learning curve and less code required. How
 2)server side rendering
 3)hocs
 4)custom hooks
+5)react fiber
+6)git rebase
+
+BoilerPlate code:
+"boilerplate code" refers to reusable, standardized code sections that are repeated throughout a program or project with minimal to no changes, often serving as a foundation or structure.
 
 
 
