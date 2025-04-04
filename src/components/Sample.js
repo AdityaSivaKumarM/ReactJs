@@ -882,3 +882,4 @@ console.log(filteredArr);
 // https://www.studytonight.com/javascript/
 // https://redux.js.org/tutorials/typescript-quick-start
 //https://github.com/gothinkster/react-redux-realworld-example-app.git
+//https://github.com/KindsonTheGenius/product-app-react-ui/blob/master/src/components/Product.js  --- important
