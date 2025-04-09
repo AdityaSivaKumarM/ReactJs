@@ -830,6 +830,61 @@ console.log(filteredArr);
 //   { name: 'Prakash', age: 27 }
 // ]
 
+for(let a in [9,8,7]){ 
+  console.log(a);
+  }
+//output :
+// 0
+// 1
+// 2
+var myVar = ['x', 'y', 'z'].map(a=> a + 'x')
+
+console.log(myVar)
+//output : [ 'xx', 'yx', 'zx' ]
+
+var myVar = ['x', 'y', 'z']
+myVar.forEach(a => console.log(a + 'x'));
+//output: 
+// xx
+// yx
+// zx
+
+// closure example:
+var x = 5;
+function outer() {
+var x = 10;
+function inner() {
+console.log(x);
+}
+return inner;
+}
+var finalResult = outer();
+finalResult(); // output : 10
+ 
+function x(){
+  for (var i = 1; i <= 10; i++){   // if you remove = operator result will print  10 value 10 times 
+    setTimeout(function (){
+    console.log(i);
+    }, i * 1000);
+  }
+  console.log("Learn")
+}
+x();
+//output:
+// Learn
+// 11
+// 11
+// 11
+// 11
+// 11
+// 11
+// 11
+// 11
+// 11
+// 11
+
+
+
 
 // useRef coding examples
 // useImperativeHandle
@@ -867,8 +922,8 @@ console.log(filteredArr);
 // Integrate with APIs to fetch and display data
 
 // Style components using CSS or a CSS framework like Bootstrap
-
-
+//data.bmi=(data.weight/((data.height/100)*(data.height/100))).toFixed(2)
+//https://webpack.js.org/guides/code-splitting/
 // gitHub links for react and javascript code practice
 // https://github.com/tkssharma/CRACK_JS_INTERVIEWS
 // https://github.com/Vasu7389/JavaScript-Interview-Questions
@@ -883,3 +938,34 @@ console.log(filteredArr);
 // https://redux.js.org/tutorials/typescript-quick-start
 //https://github.com/gothinkster/react-redux-realworld-example-app.git
 //https://github.com/KindsonTheGenius/product-app-react-ui/blob/master/src/components/Product.js  --- important
+
+//https://www.curlap.com/support/developers/curl/docs/rte/latest/en/docs/en/api-ref/java-sql-Types.html
+//git config --global http.sslVerify false
+// import React from "react";
+// const EmployeeProfile = ({ name, email }) => {
+//   console.log("EmployeeProfile");
+//   return (
+//     <>
+//       <p>Name:{name}</p>
+//       <p>Email: {email}</p>
+//     </>
+//   );
+// };
+
+// export default function EmployeeRegForm() {
+//   const [name, setName] = useState("");
+//   const [email, setEmail] = useState("");
+//   return (
+//     <>
+//       <label>
+//         Name: <input value={name} onChange={(e) => setName(e.target.value)} />
+//       </label>
+//       <label>
+//         Email:{" "}
+//         <input value={email} onChange={(e) => setEmail(e.target.value)} />
+//       </label>
+//       <hr />
+//       <EmployeeProfile name={name} />
+//     </>
+//   );
+// }
