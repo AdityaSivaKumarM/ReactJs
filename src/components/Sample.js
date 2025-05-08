@@ -516,11 +516,8 @@ console.log(arrLists);
 //(or)
 function flatten(ary) {
   var ret = [];
- 
-
   for(var i = 0; i < ary.length; i++) {
       let value = ary[i];
-      value = JSON.parse(value);
       if(Array.isArray(value)) {
           ret = ret.concat(flatten(value));
       } else {
@@ -883,8 +880,34 @@ x();
 // 11
 // 11
 
+// second large element 
+const arr = ["a","a","b","b","b","b","c","c","a","a","a","a"]
+ let largest = arr[0];
+  let secondLargest = null;
 
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > largest) {
+      secondLargest = largest;
+      largest = arr[i];
+    } else if (arr[i] < largest && (secondLargest === null || arr[i] > secondLargest)) {
+      secondLargest = arr[i];
+    }
+  }
+  console.log(secondLargest);
+   console.log(largest)
+// second large element 
+var secondMax = function (){ 
+  var arr = [20, 120,122,122,121,253,111, 111, 215, 54, 78]; // use int arrays
+  var max = Math.max.apply(null, arr); // get the max of the array
+  arr.splice(arr.indexOf(max), 1); // remove max from the array
+  return Math.max.apply(null, arr); // get the 2nd max
+};
+console.log(secondMax());
 
+// write a polyfill for the usestate ,use effect,usememo in react
+//destructuring the object or array
+// closure inner function
+//increment and decrement of timer
 
 // useRef coding examples
 // useImperativeHandle
@@ -923,6 +946,7 @@ x();
 
 // Style components using CSS or a CSS framework like Bootstrap
 //data.bmi=(data.weight/((data.height/100)*(data.height/100))).toFixed(2)
+//https://www.youtube.com/watch?v=lL_KJTm-qCc  -- React Routing
 //https://webpack.js.org/guides/code-splitting/
 // gitHub links for react and javascript code practice
 // https://github.com/tkssharma/CRACK_JS_INTERVIEWS
@@ -938,7 +962,10 @@ x();
 // https://redux.js.org/tutorials/typescript-quick-start
 //https://github.com/gothinkster/react-redux-realworld-example-app.git
 //https://github.com/KindsonTheGenius/product-app-react-ui/blob/master/src/components/Product.js  --- important
-
+// https://github.com/PacktPublishing/Mastering-React-Test-Driven-Development-Second-Edition   ----- important
+//https://github.com/arrlancore/nextjs-ssr-real-world-app-example
+//https://github.com/adrianhajdin/project_cryptoverse - crypto currency Redux toolkit project
+//https://github.com/sunil9813/Bidding-Website/tree/master - Bid web site
 //https://www.curlap.com/support/developers/curl/docs/rte/latest/en/docs/en/api-ref/java-sql-Types.html
 //git config --global http.sslVerify false
 // import React from "react";

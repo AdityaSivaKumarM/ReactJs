@@ -2,12 +2,12 @@ import React, { Children } from 'react';
 import ClassProps from './ClassProps';
 import Functionprops from './Functionalprops';
 import PatReg from './PatReg/patReg';
-import UseEffectHook from './components/UseEffectHook';
+import UseEffectHook from './components/InputSearch';
 import TODO from './TODO/TodoList';
 import './App.css';
-import Final from './components/UseEffect-Ex2';
+import Final from './components/printAPIData';
 import Index from './components/UseEffect-Ex1';
-import UseRefHook from './components/UseRefHook';
+import UseRefHook from './components/increment';
 import ReducerTutorial from './components/UseReducerHook';
 import TodoList from './components/TodoList';
 import ProgressStatusBar from './components/persentageStatus';
@@ -29,10 +29,10 @@ const App = ({articles}) =>{
       <Functionprops name="Hellow learner" place="placeY"></Functionprops> */}
       {/* <PatReg></PatReg> */}
      {/* <UseEffectHook></UseEffectHook> */}
-     {/* <Final></Final> */}
-     <GuestForm></GuestForm>
+     <Final></Final>
+     {/* <GuestForm></GuestForm>
      <ArticlesSorting articles={articles}></ArticlesSorting>
-     <CountrySel></CountrySel>
+     <CountrySel></CountrySel> */}
      {/* <Index></Index> */}
        {/* <UseRefHook></UseRefHook>  */}
        {/* <dropDownSel></dropDownSel> */}
@@ -41,7 +41,7 @@ const App = ({articles}) =>{
       {/* <TodoList></TodoList> */}
      
       {/* <Clock></Clock> */}
-      <ProgressStatusBar></ProgressStatusBar>
+      {/* <ProgressStatusBar></ProgressStatusBar> */}
       {/* <PaginationArticles></PaginationArticles> */}
     </div>
     )

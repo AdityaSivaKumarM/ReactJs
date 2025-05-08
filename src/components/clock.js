@@ -118,4 +118,61 @@ export default function App() {
 //       <button onClick={() => setStart(false)}>Stop</button>
 //     </div>
 //   );
+
+// increment and decrement timer
+// import { useEffect, useState } from "react";
+
+// export default function APP() {
+//   const [increment, setIncrement] = useState(false);
+//   const [decrement, setDecrement] = useState(false);
+//   const [count, setCount] = useState(0);
+
+//   useEffect(() => {
+//     let interval = null;
+//     if (increment) {
+//       setDecrement(false);
+//       interval = setInterval(() => {
+//         setCount((c) => c + 1);
+//       }, 1000);
+//     } else {
+//       clearInterval(interval);
+//     }
+
+//     return () => clearInterval(interval);
+//   }, [increment]);
+//   useEffect(() => {
+//     let interval = null;
+//     if (decrement) {
+//       setIncrement(false);
+//       interval = setInterval(() => {
+//         setCount((c) => c - 1);
+//       }, 1000);
+//     } else {
+//       clearInterval(interval);
+//     }
+
+//     return () => clearInterval(interval);
+//   }, [decrement]);
+//   const reset = () => {
+//     setCount(0);
+//     setIncrement(false);
+//     setDecrement(false);
+//     // clearInterval();
+//   };
+//   return (
+//     <>
+//       <button type="submit" onClick={() => setIncrement(true)}>
+//         Increment
+//       </button>
+//       <button type="submit" onClick={() => setDecrement(true)}>
+//         Decrement
+//       </button>
+//       <button type="submit" onClick={reset}>
+//         Reset
+//       </button>
+//       <h1>{count}</h1>
+//     </>
+//   );
+// }
+
 }

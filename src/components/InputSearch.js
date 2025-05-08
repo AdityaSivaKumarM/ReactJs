@@ -43,7 +43,7 @@ const UseEffectHook = () => {
     // "Ram",
     // "Ranjan"
   ];
-  const [name,setName] = useState();
+  //const [name,setName] = useState();
   const [listData,setListData] = useState(people);
 
    const searchName =(e)=>{

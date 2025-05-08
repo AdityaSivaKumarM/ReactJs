@@ -14,10 +14,12 @@ const Final = () => {
     try {
       await fetch(apiURL).then((res)=>res.json()).then((response)=>{
         const { drinks } = response;
+        console.log(drinks);
         setDrinksData(drinks);
         setLoading(false);
         setIsError({ status: false, msg: "" });
         if (!drinks) {
+          setDrinksData([]);
           throw new Error("data not found");
         }
       });
