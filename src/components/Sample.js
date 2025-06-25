@@ -277,6 +277,10 @@ console.log(newArray);
         return arr.indexOf(obj) == index
     })
     console.log(duplicate);
+    //(or)
+
+    let removeDuplicates = [...new Set(arr)];
+    console.log(removeDuplicates);
 /* Remove duplicates ends */
 
 // string charactor count starts
@@ -904,6 +908,79 @@ var secondMax = function (){
 };
 console.log(secondMax());
 
+// splice:
+
+// Purpose: Changes the contents of an array by removing existing elements and/or adding new elements. It modifies the original array.
+// Syntax: array.splice(startIndex, deleteCount, item1, ..., itemX)
+// startIndex: The index at which to start changing the array.
+// deleteCount: (Optional) The number of elements to remove from startIndex. If 0, no elements are removed.
+// item1, ..., itemX: (Optional) The elements to add to the array, starting at startIndex.
+    const colors = ["red", "green", "blue", "yellow"];
+
+    // Remove 1 element at index 1
+    const removedColor = colors.splice(1, 1);
+    console.log(removedColor); // Output: ["green"] (returns the removed element(s))
+    console.log(colors);      // Output: ["red", "blue", "yellow"] (original array modified)
+
+    // Insert elements without removing any
+    colors.splice(1, 0, "purple", "pink");
+    console.log(colors);      // Output: ["red", "purple", "pink", "blue", "yellow"]
+
+    // Replace elements
+    colors.splice(2, 2, "black"); // Remove 2 elements from index 2, add "black"
+    console.log(colors);      // Output: ["red", "purple", "black", "yellow"]
+
+//slice:
+// Purpose: Extracts a portion of an array and returns a new array containing the selected elements. It does not modify the original array.
+// Syntax: array.slice(startIndex, endIndex)
+// startIndex: (Optional) The index at which to begin extraction. If omitted, extraction starts from index 0.
+// endIndex: (Optional) The index before which to end extraction. The element at endIndex is not included. If omitted, extraction continues to the end of the array.
+
+const fruits = ["apple", "banana", "orange", "mango"];
+    const citrusFruits = fruits.slice(2); // Extracts from index 2 to the end
+    console.log(citrusFruits); // Output: ["orange", "mango"]
+    console.log(fruits);      // Output: ["apple", "banana", "orange", "mango"] (original array unchanged)
+
+    const selectedFruits = fruits.slice(1, 3); // Extracts from index 1 up to (but not including) index 3
+    console.log(selectedFruits); // Output: ["banana", "orange"]
+
+// Var ,let ,const:
+//-------------------
+// var: internal declaration will move on to top and we can re declare and re initialize.
+// let : block level scope and can't re declare but can re initialize.
+// const: block level scope and can't re declare and can't re initialize.
+
+// Template Literals:
+// Template Literals provides some advantage of using back tick syntax like 
+// 1) Better String Creation
+// 2) No need to handle escaping
+// 3)Multi line string
+// 4)String interpolation
+// 5)Expression
+// 6)Complex Expression.
+
+// Template Literals are very useful when we have complex string as it handles everything just inside back tick syntax.
+
+
+//Arrow Function:
+// Arrow function it doesn't have its own this, so when ever you call this it refer to its parent scope only
+
+// Q. What are call, bind, and apply?
+
+// Ans. call, bind, and apply are methods used to manipulate the value of 'this' in JavaScript functions.
+// Call invokes a function with a specified 'this' value and arguments provided individually.
+
+// Bind creates a new function that, when called, has its 'this' keyword set to the provided value.
+
+// Apply invokes a function with a specified 'this' value and arguments provided as an array.
+
+// All three methods are used to control the value of 'this' in a function.
+
+// Example: myFunction.call(thisValue, arg1, arg2)
+
+// Example: myFunction.bind(thisValue)
+
+// Example: myFunction.apply(thisValue, [arg1, arg2])
 // write a polyfill for the usestate ,use effect,usememo in react
 //destructuring the object or array
 // closure inner function
