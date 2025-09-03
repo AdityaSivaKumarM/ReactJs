@@ -17,6 +17,7 @@ import ArticlesSorting from './components/SortingArticles/ArticlesSort';
 import CountrySel from './components/countryCitySel';
 import PaginationArticles from './components/PaginationArticles';
 import GuestForm from './components/MealSchedule/GuestForm';
+import FormComponent from './components/form';
 
 const App = ({articles}) =>{
 
@@ -29,7 +30,7 @@ const App = ({articles}) =>{
       <Functionprops name="Hellow learner" place="placeY"></Functionprops> */}
       {/* <PatReg></PatReg> */}
      {/* <UseEffectHook></UseEffectHook> */}
-     <Final></Final>
+     {/* <Final></Final> */}
      {/* <GuestForm></GuestForm>
      <ArticlesSorting articles={articles}></ArticlesSorting>
      <CountrySel></CountrySel> */}
@@ -43,6 +44,7 @@ const App = ({articles}) =>{
       {/* <Clock></Clock> */}
       {/* <ProgressStatusBar></ProgressStatusBar> */}
       {/* <PaginationArticles></PaginationArticles> */}
+      <FormComponent></FormComponent>
     </div>
     )
   

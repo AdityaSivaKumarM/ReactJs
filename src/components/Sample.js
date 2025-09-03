@@ -908,6 +908,34 @@ var secondMax = function (){
 };
 console.log(secondMax());
 
+//print missing numbers in array:
+
+function findMissingNumbers(arr, rangeStart, rangeEnd) {
+  const missing = [];
+  for (let i = rangeStart; i <= rangeEnd; i++) {
+    if (!arr.includes(i)) {
+      missing.push(i);
+    }
+  }
+  return missing;
+}
+
+// Example usage:
+const inputArray = [1, 2, 4, 6, 7, 9];
+let missingNumbers = findMissingNumbers(inputArray, 1, 10);
+console.log(missingNumbers);
+missingNumbers = missingNumbers.concat(inputArray);
+let newArr = missingNumbers.sort((a,b)=>a-b);
+console.log(newArr);
+
+// output: 
+// [ 3, 5, 8, 10 ]
+// [
+//   1, 2, 3, 4,  5,
+//   6, 7, 8, 9, 10
+// ]
+
+
 // splice:
 
 // Purpose: Changes the contents of an array by removing existing elements and/or adding new elements. It modifies the original array.
@@ -944,6 +972,16 @@ const fruits = ["apple", "banana", "orange", "mango"];
     const selectedFruits = fruits.slice(1, 3); // Extracts from index 1 up to (but not including) index 3
     console.log(selectedFruits); // Output: ["banana", "orange"]
 
+    // Material UI
+    // React routing concepts
+    // Redux debugging 
+    // Todo Redux app
+    // Typescript
+    // Graphql (compiler: graphql, playground: like postman to see output,graphql with apollo server)
+    // Nextjs
+    // Redux toolkit
+    // Java
+    // spring  
 // Var ,let ,const:
 //-------------------
 // var: internal declaration will move on to top and we can re declare and re initialize.
@@ -959,7 +997,14 @@ const fruits = ["apple", "banana", "orange", "mango"];
 // 5)Expression
 // 6)Complex Expression.
 
+
 // Template Literals are very useful when we have complex string as it handles everything just inside back tick syntax.
+//pass by value,pass by Reference,
+//recursion
+//e.preventDefault();
+//Authentication and authotisation
+//503,401,403,400,404,501,500 error messages
+// pass parameters using bind in onclick
 
 
 //Arrow Function:
