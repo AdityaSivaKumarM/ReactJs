@@ -577,14 +577,31 @@ Context API
 -----------
 Uses a decentralized approach, where the state is passed through the component tree using the provider and consumer components. 
 Context API is better for simpler applications or when you need to avoid prop drilling. 
-It's also easier to use, with a short learning curve and less code required. However, Context API doesn't require you to set up a centralized store. 
+It's also easier to use, with a short learning curve and less code required. However, Context API doesn't require you to set up a centralized store.
 
 1)reconciliation in react
 2)server side rendering
-3)hocs
-4)custom hooks
-5)react fiber
-6)git rebase
+3)hocs with example
+4)custom hooks -- polyfill of useeffect and usestate
+5)pure component
+6)useMemo,useCallback,memo
+7)react fiber
+8)Redux toolkit
+9)revision of js codes,React codes
+10)revision of all interview questions
+11)closure,promisses,memoization
+12)call,apply,bind
+13)destructuring of object and array
+14)square(2)
+square(3)
+square(2)  do memoization
+15)Refs examples
+16) debouncing
+pass by value, pass by reference
+interceptor
+interpolation
+imperativehandler
+git rebase
 
 BoilerPlate code:
 "boilerplate code" refers to reusable, standardized code sections that are repeated throughout a program or project with minimal to no changes, often serving as a foundation or structure.
@@ -681,5 +698,3 @@ HTML & CSS
 6. what is flex box?
 7. what are css preprocessors and explain?
 8. what is css box model?
-
-6. 

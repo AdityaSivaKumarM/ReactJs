@@ -51,14 +51,14 @@ function FormComponent() {
           name="name"
           id="name"
           placeholder="Enter your name"
-          //   onChange={handleOnChange}
+           onChange={handleOnChange}
 
-          onChange={(event) =>
-            setFormData({
-              ...formData,
-              [event.target.name]: event.target.value,
-            })
-          }
+        //   onChange={(event) =>
+        //     setFormData({
+        //       ...formData,
+        //       [event.target.name]: event.target.value,
+        //     })
+        //   }
         />
         <input
           value={formData.email}
@@ -66,13 +66,13 @@ function FormComponent() {
           name="email"
           id="email"
           placeholder="Enter your email"
-          //   onChange={handleOnChange}
-          onChange={(event) =>
-            setFormData({
-              ...formData,
-              [event.target.name]: event.target.value,
-            })
-          }
+          onChange={handleOnChange}
+        //   onChange={(event) =>
+        //     setFormData({
+        //       ...formData,
+        //       [event.target.name]: event.target.value,
+        //     })
+        //   }
         />
         <button type="submit">Submit</button>
       </form>
